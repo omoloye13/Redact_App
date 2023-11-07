@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Content Redaction App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 class="header">Redaction</h1>
+    <div class="container">
+        <div class="wrapper">
+        <textarea id="originalText" placeholder="Enter your text here..."></textarea>
+
+        <div class="input_wrapper">
+        <input type="text" id="wordsToRedact" placeholder="Words to redact"><br>
+        <div id="char">
+
+<label for="replacementCharacter">Replacement Character:</label>
+<select id="replacementCharacter">
+    <option value="*">Asterisks</option>
+    <option value="?">Question Marks</option>
+    <option value="-">Dashes</option>
+    <option value="_">Underscores</option>
+    <option value="REDACTED">Custom Word</option>
+</select><br>
+        </div>
+       
+        <button id="redactButton">Redact Now</button>
+        </div>
+       
+    <div class="result">
+        
+        <p class="display">Words Scanned: <span id="wordCount">0</span></p>
+        <p class="display">Words Matched: <span id="matchedCount">0</span></p>
+        <p class="display">Characters Scrambled: <span id="scrambledCount">0</span></p>
+        <p class="display">Time Taken: <span id="timeTaken">0</span> seconds</p>
+    </div>
+    <div class="redacted-text">
+        <p class="display"><strong>Redacted Text:</strong></p>
+        <pre id="redactedText"></pre>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

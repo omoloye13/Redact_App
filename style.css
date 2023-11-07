@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
+body {
+    text-align: center;
+    background-color: #01161e;
+}
+.header{
+    font-weight: 700;
+    font-size: 3em;
+    color: #598392;
+    margin-top: 0.5em;
+}
+.container {
+    margin: 10px;
+    /* border: solid red; */
+}
+.wrapper{
+    width: 50%;
+    height: 100vh;
+    /* border: solid yellow; */
+    margin: auto;
+    background-color: #124559;
+    border-radius: 1em;
+}
+
+#originalText {
+    width: 70%;
+    height: 20vh;
+    margin-top: 2.5em;
+    border-radius: 0.5em;
+    background-color: #aec3b0;
+    outline: none;
+    text-align: center;
+    padding: 3em;
+    font-weight: 400;
+    font-size: 1em;
+    color: #598392;
+   
+    
+}
+
+.input_wrapper{
+    margin: 2em;
+   
+}
+#wordsToRedact{
+    /* border: solid green; */
+    border: none;
+    background-color: #aec3b0;
+    height: 8vh;
+    width: 40%;
+    margin: auto;
+    border-radius: 0.5em;
+    text-align: center;
+    color: #598392;
+}
+#char{
+    margin-top: 1em;
+}
+label{
+    color: #598392;
+}
+#replacementCharacter{
+        background-color: #aec3b0;
+    border: none;
+        height: 6vh;
+        width: 20%;
+        margin: auto;
+        border-radius: 0.5em;
+        text-align: center;
+}
+
+/* input,
+select,
+button {
+    margin: 5px;
+} */
+
+.result,
+.redacted-text {
+    margin: 20px;
+}
+#redactButton{
+    background-color: #eff6e0;
+    border: none;
+        height: 6vh;
+        width: 20%;
+        margin: auto;
+        border-radius: 0.5em;
+        text-align: center;
+        margin-top: 1.5em;
+        color:#124559 ;
+        font-weight: 700;
+        font-size: 1em;
+        cursor: pointer;
+        outline: none;
+}
+.display{
+    color: #eff6e0;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+    color: #eff6e0;
+}
